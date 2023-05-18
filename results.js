@@ -1,6 +1,8 @@
 const rsaAnalysis = (message) => {
     const forge = require('node-forge');
     const crypto = require('crypto');
+    const { performance } = require('perf_hooks');
+
     
     var startKeyTime = performance.now();
     // Generate a new RSA key pair
